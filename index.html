@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Convertisseur de cotation d'escalade</title>
+  <link rel="stylesheet" href="style.css"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+
+	<h1><strong>Convertisseur de cotation d'escalade</strong></h1>
+ <body>
+  <form>
+    
+  <br></br>
+    
+	<p>-Entrez la cotation à convertir</p>
+	<div class=groupe>
+		<input type="text" id="originGrade" placeholder="5c par exemple">
+	 </div>
+	<br><br>
+	<p>-Sélectionnez le pays d'origine de cette cotation</p>
+	
+		<select id="originCountry">
+			<option value="us">États-Unis</option>
+			<option value="fr">France</option>
+			<option value="uk">Angleterre</option>
+		</select>
+    <i class="fa-solid fa-earth-americas"></i>
+
+	<br><br>
+	<p>-Selectionnez le pays de la cotation dans laquelle convertir</p>
+	
+		<select id="targetCountry">
+			<option value="us">États-Unis</option>
+			<option value="fr">France</option>
+			<option value="uk">Angleterre</option>
+		</select>
+   <i class="fa-solid fa-earth-americas"></i>
+ 
+	
+	<br><br>
+	<p>-Quelle discipline ?</p>
+	
+		<input type="radio" id="sport" name="conversionType" value="sport" checked>
+		<label for="sport">Voie 🧗</label>
+		<br><br>
+		<input type="radio" id="boulder" name="conversionType" value="boulder">
+		<label for="boulder">Bloc ⛰️</label>
+	
+	<br><br>
+  <div class=container>
+	<button type="button" id="monBouton" class=button onclick="convertGrade()" >Convertir<i class="fa-solid fa-arrow-right-arrow-left"></i></button>
+  </div>
+
+	<br><br>
+<script>
+ let result= "Votre cotation est "
+document.getElementById("monBouton").addEventListener("click", function() {
+  document.getElementById("monParagraphe").innerHTML = result;
+
+});
+</script>
+    <p style="display: inline-block" id="monParagraphe"></p>
+    <strong><span style="display: inline-block" id="convertedGrade"></span></strong>     </p>
+  
+    <br></br>
+    </form>
+   </body>
+      
+
+
+
+
+
+
+  <h1><strong>Sommaire</strong></h1>
+  <a href="#I"><h2>I. Les différentes cotations en escalade</h1></a>
+  <a href="#1"><p>1. États-Unis : Sierra (voie)</p></a>
+  <a href="#2"><p>2. États-Unis : Vermin (bloc)</p></a>
+  <a href="#3"><p>3. France (voie)</p></a>
+  <a href="#4"><p>4. France : Fontainebleau (bloc)</p></a>
+  <a href="#5"><p>5. Angleterre : Adjectival (voie)</p></a>
+  <a href="#6"><p>6. Angleterre : Technical (voie)</p></a>
+  <a href="#7"><p>7. Angleterre : Peak District (bloc)</p></a>
+  <a href="#8"><p>8. Autres cotations</p></a>
+  <br></br>
+  <a href="#II"><h2>II. Tableau de comparaison</h1></a>
+  <a href="#11"><p>1. Bloc</p></a>
+  <a href="#22"><p>2. Voie</p></a>
+  <br></br>
+  <a href="#III"><h2>III. Source</h1></a>
+  <br></br>
+
+  <h2 id="I">Les différentes cotations en escalade</h2>
+  <br></br>
+  <h3 id="1">États-Unis : Sierra (voie)</h3>
+  <p>Cette cotation est utilisée en amérique du nord. Elle va de 1 à 5.15.
+  De 1 à 4, c'est de la randonnée. A partir de 5, ça devient de l'escalade. De 5.0 à 5.3 tout le monde peut réussir, de 5.4 à 5.7, les novices y arrivent encore, de 5.8 à 5.11 il faut de bonnes bases pour réussir à grimper, de 5.12 à 5.14 il faut être un expert et au-delà de 5.15, c'est le niveau professionnel.</p>
+  <br></br>
+  <h3 id="2">États-Unis : Vermin (bloc)</h3>
+  <p>Cette cotation est très répandue aux Etats-Unis, Canada et Australie. Elle est apparue en 1980 à Hueco Tanks et est utilisée pour le bloc. Elle va de V0 à V17. Cependant, elle a tendance a discriminer les blocs simple. C'est-à-dire que par exemple un bloc 6A déjà presque inaccessible pour un débutant sera côté V3.</p
+ 
+<br></br>
+  <h3 id="3">France (voie)</h3>
+   <p>Elle est uniquement utilisée en France et est très précise. En effet, elle va du 1 au 9c et elle combine des chiffres, des lettres (a,b,c) et des + ce qui lui permet une grande précision. </p>
+  <br></br>
+  <h3 id="4">France : Fontainebleau (bloc)</h3>
+  <p>C'est l'échelle de cotation de bloc dans toute l'Europe. Elle tient son nom de la ville de Fontainebleau où est née la pratique du bloc. Elle ressemeble à la cotation française pour la voie car comme cette dernière elle utilise des chiffres, des lettre, des + mais pas de -. Elle démarre cependant un peu plus haut, en effet, un 5B de Fontainebleau correspond à un 6b de cotation française. </p>
+  <img src="https://img.redbull.com/images/c_crop,w_1999,h_1000,x_0,y_274,f_auto,q_auto/c_scale,w_1200/redbullcom/2016/06/26/1331802686409_2/fontainebleau-escalade-fontbleau-2016">
+  <p>Par Paul Gallo</p>
+  <br></br>
+    <h3 id="5">Angleterre : Adjectival (voie)</h3>
+  <p>Cette notation est utilisé au Royaume-Unis et prend en compte les facteurs de techniques, d'assurage, de qualité de roche, d'exposition et d'endurance. Elle est faite pour les ascencions à vue sans que le grimpeur n'est vu quelqu'un la faire. Elle utilise la lettre E depuis 1970 et a été créée par O.G Jones au début du 20ème siècle. </p>
+  <br></br>
+  <h3 id="6">Angleterre : Technical (voie)</h3>
+  <p>Elle est aussi utlisée au Royaume-Uni mais ne prend en compte que la technique nécessaire pour gravir la voie. Elle néglige ainsi l'endurance, les conditions ... Elle s'inspire à la base de l'échelle de cotation de Fontainebleau.</p>
+  <br></br>
+  <h3 id="7">Angleterre : Peak District (bloc)</h3>
+  <p>Aux alentours de 2002, cette cotation est apparue dans des magazines de grimpe et a été utilisé en Angleterre à Peak District d'où son nom.</p>
+  <br></br>
+    <h3 id="8">Autres cotations</h3>
+  <p>Il existe toutefois de nombreuses autres cotations en voie comme :
+  <ul>
+    <li>La UIAA (celle de l'union internationale)</li>
+    <li>La De (d'Allemagne)</li>
+    <li>La Scandinave (de Finlande)</li>
+    <li>La Scandinave (de Norvège et Suède)</li>
+    <li>Ainsi que d'autres moins répandues</li>
+  </ul></p>
+  <br></br>
+  <h2 id="II">Tableau de comparaison</h2>
+  <br></br>
+  <h3 id="11">Bloc :</h3>
+  <img src="https://3.bp.blogspot.com/-1ooHESPQcNk/VQmeR4hQ-JI/AAAAAAAANcM/VBdlmAkcHM4/s1600/%C3%A9quivalencecot.JPG" alt="Voici le tableau de conversion pour la difficulté des blocs.">
+  <p>Par Louise Gally</p>
+  <br></br>
+ 
+  <h3 id="22">Voie :</h3>
+ <img src="https://uc2070ca5531e3b2faea3023ec47.previews.dropboxusercontent.com/p/thumb/ABxJWApM82efjMNYpYEff8xtglHipH5vq5D9-3bcJ7PCHR9gKj6U4TNkVLb3PcrMJ4de5PaiisUfUqAQoNzJNmY6Ipegk5FBBcGbLHspq-TG7jiUyz1jbFEyshaDInGSX_omovOv-Ht8a_HA7dLuiwIoK72-lV1WbQSdRnOAoM_qIEsyjR2Q3_sI4-wxB5dqv39lUqnCuzoFpZ1bB-0tJFo1j22LfpdbTRcxTRplx66klT26qtqGJNtqK3tn9881F_1fkkhe7V3Bb-kPbaQrd34z6tBI6hg6Xcwf2GH6Rt1SNzJIx1SRJthidcLnin0NX1MK9pJKlc2uh9KDWcDubYCeX6uv3qijaxndPZgxj5Qxhh_docEqI8ZKTvXkPai257TjawXsp9q5rs_H3LFTVufZxtfxrbsWTxlwYP8qjK5AHQ/p.png" alt="Voici le tableau de conversion pour la difficulté des blocs." width="600" height="900">
+  <p>Par Kazaden</p>
+  <br></br>
+  <h3 id="III">Voici mes sources :</h3>
+
+  <p><em>Les Différentes Cotations en Escalade</em> .(23 avril 2021). Extrait de <a href="https://blog.kazaden.com/cotations-en-escalade-alpinisme/"> https://blog.kazaden.com/cotations-en-escalade-alpinisme/</a></p>
+  <p>Louise Gally. <em>Les Cotations Louiseg - lewebpedagogique.com</em>. Extrait de <a href="https://lewebpedagogique.com/sectionescalade/files/2015/11/Les-cotations-LouiseG-V2.pdf"</a>https://lewebpedagogique.com/sectionescalade/files/2015/11/Les-cotations-LouiseG-V2.pdf</p>
+
+       <p><em>Cotation en escalade " Convertir les degrés de difficulté en ligne</em> .(2020). Extrait de <a href="https://www.alpiniste.fr/cotation-escalade-calculateur/">https://www.alpiniste.fr/cotation-escalade-calculateur/</a></p>
+  
+
+	<script>
+		function convertGrade() {
+			
+			var originCountry = document.getElementById("originCountry").value;
+			var originGrade = document.getElementById("originGrade").value;
+			var targetCountry = document.getElementById("targetCountry").value;
+
+			
+			var conversionType = "";
+			if (document.getElementById("sport").checked) {
+				conversionType = "sport";
+			} else if (document.getElementById("boulder").checked) {
+				conversionType = "boulder";
+			}
+
+			
+		var convertedGrade;
+		if (originCountry === "us" && targetCountry === "fr") {
+			if (conversionType === "sport") {
+				convertedGrade = convertUsToFrSportGrade(originGrade);
+			} else if (conversionType === "boulder") {
+				convertedGrade = convertUsToFrBoulderGrade(originGrade);
+			}
+		} else if (originCountry === "fr" && targetCountry === "us") {
+			if (conversionType === "sport") {
+				convertedGrade = convertFrToUsSportGrade(originGrade);
+			} else if (conversionType === "boulder") {
+				convertedGrade = convertFrToUsBoulderGrade(originGrade);
+			}
+		} else if (originCountry === "uk" && targetCountry === "fr") {
+			if (conversionType === "sport") {
+				convertedGrade = convertUkToFrSportGrade(originGrade);
+			} else if (conversionType === "boulder") {
+				convertedGrade = convertUkToFrBoulderGrade(originGrade);
+			}
+		} else if (originCountry === "fr" && targetCountry === "uk") {
+			if (conversionType === "sport") {
+				convertedGrade = convertFrToUkSportGrade(originGrade);
+			} else if (conversionType === "boulder") {
+				convertedGrade = convertFrToUkBoulderGrade(originGrade);
+			}
+		} else if (originCountry === "us" && targetCountry === "uk") {
+			if (conversionType === "sport") {
+				convertedGrade = convertUsToUkSportGrade(originGrade);
+			} else if (conversionType === "boulder") {
+				convertedGrade = convertUsToUkBoulderGrade(originGrade);
+			}
+		} else if (originCountry === "uk" && targetCountry === "us") {
+      if (conversionType === "sport") {
+        convertedGrade = convertUkToUsSportGrade(originGrade);
+      } else if (conversionType === "boulder") {
+				convertedGrade = convertUkToUsBoulderGrade(originGrade);
+		}
+    }if (originCountry === "us" && targetCountry === "us") {
+			convertedGrade= originGrade
+			}if (originCountry === "fr" && targetCountry === "fr") {
+			convertedGrade= originGrade
+			}if (originCountry === "uk" && targetCountry === "uk") {
+			convertedGrade= originGrade
+			}if (originGrade === "") {
+			convertedGrade= "entrez une cotation à convertir !! "
+    }
+    
+    
+
+function convertUsToFrSportGrade(originGrade) {
+  switch (originGrade) {
+    case '5.0':
+      return '3a';
+    case '5.1':
+      return '3b';
+    case '5.2':
+      return '3c';
+    case '5.3':
+      return '4a';
+    case '5.4':
+      return '4b';
+    case '5.5':
+      return '4c';
+    case '5.6':
+      return '5a';
+    case '5.7':
+      return '5b';
+    case '5.8':
+      return '5c';
+    case '5.9':
+      return '6a';
+    case '5.10a':
+      return '6a+';
+    case '5.10b':
+      return '6b';
+    case '5.10c':
+      return '6b+';
+    case '5.10d':
+      return '6c';
+    case '5.11a':
+      return '6c+';
+    case '5.11b':
+      return '7a';
+    case '5.11c':
+      return '7a+';
+    case '5.11d':
+      return '7b';
+    case '5.12a':
+      return '7b+';
+    case '5.12b':
+      return '7c';
+    case '5.12c':
+      return '7c+';
+    case '5.12d':
+      return '8a';
+    case '5.13a':
+      return '8a+';
+    case '5.13b':
+      return '8b';
+    case '5.13c':
+      return '8b+';
+    case '5.13d':
+      return '8c';
+    case '5.14a':
+      return '8c+';
+    case '5.14b':
+      return '9a';
+    case '5.14c':
+      return '9a+';
+    case '5.14d':
+      return '9b';
+    case '5.15a':
+      return '9b+';
+    case '5.15b':
+      return '9c';
+    default:
+      return 'Vous avez fait une erreur dans la cotation à convertir, elle doit ressembler à 5.12a par exemple. N’oubliez pas que c’est un point entre les deux parties de la cotations et que la lettre est minuscule.';
+  }
+}
+
+      function convertFrToUsSportGrade(originGrade) {
+  switch (originGrade) {
+    case '3a':
+      return '5.0';
+    case '3b':
+      return '5.1';
+    case '3c':
+      return '5.2';
+    case '4a':
+      return '5.3';
+    case '4b':
+      return '5.4';
+    case '4c':
+      return '5.5';
+    case '5a':
+      return '5.6';
+    case '5b':
+      return '5.7';
+    case '5c':
+      return '5.8';
+    case '6a':
+      return '5.9';
+    case '6a+':
+      return '5.10a';
+    case '6b':
+      return '5.10b';
+    case '6b+':
+      return '5.10c';
+    case '6c':
+      return '5.10d';
+    case '6c+':
+      return '5.11a';
+    case '7a':
+      return '5.11b';
+    case '7a+':
+      return '5.11c';
+    case '7b':
+      return '5.11d';
+    case '7b+':
+      return '5.12a';
+    case '7c':
+      return '5.12b';
+    case '7c+':
+      return '5.12c';
+    case '8a':
+      return '5.12d';
+    case '8a+':
+      return '5.13a';
+    case '8b':
+      return '5.13b';
+    case '8b+':
+      return '5.13c';
+    case '8c':
+      return '5.13d';
+    case '8c+':
+      return '5.14a';
+    case '9a':
+      return '5.14b';
+    case '9a+':
+      return '5.14c';
+    case '9b':
+      return '5.14d';
+    case '9b+':
+      return '5.15a';
+    case '9c':
+      return '5.15b';
+    default:
+      return 'Vous avez fait une erreur dans la cotation à convertir, elle doit ressembler à 9b par exemple. N’oubliez pas que la lettre est minuscule.';
+  }
+}
+
+      function convertUsToFrBoulderGrade(originGrade) {
+  switch (originGrade) {
+    case 'VB':
+      return '1/2/3';
+    case 'V0':
+      return '4';
+    case 'V0+':
+      return '4+';
+    case 'V1':
+      return '5';
+    case 'V2':
+      return '5+';
+    case 'V3':
+      return '6A';
+    case 'V3/4':
+      return '6A+';
+    case 'V4':
+      return '6B';
+    case 'V4/5':
+      return '6B+';
+    case 'V5':
+      return '6C';
+    case 'V5/6':
+      return '6C+';
+    case 'V6':
+      return '7A';
+    case 'V7':
+      return '7A+';
+    case 'V8':
+      return '7B';
+    case 'V8/9':
+      return '7B+';
+    case 'V9':
+      return '7C';
+    case 'V10':
+      return '7C+';
+    case 'V11':
+      return '8A';
+    case 'V12':
+      return '8A+';
+    case 'V13':
+      return '8B';
+    case 'V14':
+      return '8B+';
+    case 'V15':
+      return '8C';
+    case 'V16':
+      return '8C+'
+     
+    default:
+      return 'Vous avez fait une erreur dans la cotation à convertir, elle doit ressembler à V12 par exemple. N’oubliez pas que le V est majuscule.';
+  }
+}
+
+      function convertFrToUsBoulderGrade(originGrade) {
+  switch (originGrade) {
+    case '1':
+      return 'VB';
+    case '2':
+      return 'VB';
+    case '1/23':
+      return 'VB';
+    case '4':
+      return 'V0';
+    case '4+':
+      return 'V0+';
+    case '5':
+      return 'V1';
+    case '5+':
+      return 'V2';
+    case '6A':
+      return 'V3';
+    case '6A+':
+      return 'V3/4';
+    case '6B':
+      return 'V4';
+    case '6B+':
+      return 'V4/5';
+    case '6C':
+      return 'V5';
+    case '6C+':
+      return 'V5/6';
+    case '7A':
+      return 'V6';
+    case '7A+':
+      return 'V7';
+    case '7B':
+      return 'V8';
+    case '7B+':
+      return 'V8/9';
+    case '7C':
+      return 'V9';
+    case '7C+':
+      return 'V10';
+    case '8A':
+      return 'V11';
+    case '8A+':
+      return 'V12';
+    case '8B':
+      return 'V13';
+    case '8B+':
+      return 'V14';
+    case '8C':
+      return 'V15';
+    case '8C+':
+      return 'V16';
+    default:
+      return 'Vous avez fait une erreur dans la cotation à convertir, elle doit ressembler à 6B par exemple. N’oubliez pas que la lettre est majuscule.';
+  }
+}
+
+                  function convertUsToUkBoulderGrade(originGrade) {
+  switch (originGrade) {
+    case 'VB-':
+      return 'B0';
+    case 'VB':
+      return 'B0';
+    case 'V0-':
+      return 'B1';
+    case 'V0':
+      return 'B1';
+    case 'V0+':
+      return 'B2';
+    case 'V1':
+      return 'B2/3';
+    case 'V1/2':
+      return 'B3';
+    case 'V2':
+      return 'B3';
+    case 'V2/3':
+      return 'B3';
+    case 'V3':
+      return 'B3/4';
+    case 'V3/4':
+      return 'B4';
+    case 'V4':
+      return 'B4/5';
+    case 'V4/5':
+      return 'B5';
+    case 'V5':
+      return 'B5/6';
+    case 'V6':
+      return 'B7';
+    case 'V7':
+      return 'B8';
+    case 'V8':
+      return 'B8/9';
+    case 'V9':
+      return 'B10';
+    case 'V10':
+      return 'B10/11';
+    case 'V11':
+      return 'B11';
+    case 'V12':
+      return 'B12';
+    case 'V13':
+      return 'B13';
+    case 'V14':
+      return 'B14';
+    case 'V15':
+      return 'B15';
+    case 'V16':
+      return 'B16'
+    case 'V17':
+      return 'B17'
+     
+    default:
+      return 'Vous avez fait une erreur dans la cotation à convertir, elle doit ressembler à V12 par exemple. N’oubliez pas que le V est majuscule. ';
+  }
+}
+
+      function convertUkToUsBoulderGrade(originGrade) {
+  switch (originGrade) {
+    case 'B0':
+      return 'VB';
+    case 'B1':
+      return 'V0';
+    case 'B2':
+      return 'V0+';
+    case 'B2/3':
+      return 'V1';
+    case 'B3':
+      return 'V2';
+    case 'B3/4':
+      return 'V3';
+    case 'B4':
+      return 'V3/4';
+    case 'B4/5':
+      return 'V4';
+    case 'B5':
+      return 'V4/5';
+    case 'B5/6':
+      return 'V5';
+    case 'B6':
+      return 'V5/6';
+    case 'B7':
+      return 'V6';
+    case 'B8':
+      return 'V7';
+    case 'B8/9':
+      return 'V8';
+    case 'B9':
+      return 'V8/9';
+    case 'B10':
+      return 'V10';
+    case 'B10/11':
+      return 'V11';
+    case 'B11':
+      return 'V11';
+    case 'B12':
+      return 'V12';
+    case 'B13':
+      return 'V13';
+    case 'B14':
+      return 'V14';
+    case 'B15':
+      return 'V15';
+    case 'B16':
+      return 'V16'
+    case 'B17':
+      return 'V17'
+     
+    default:
+      return 'Vous avez fait une erreur dans la cotation à convertir, elle doit ressembler à B12 par exemple. N’oubliez pas que le B est majuscule.';
+  }
+}
+
+
+      function convertUsToUkSportGrade(originGrade) {
+switch (originGrade) {
+    case '5.0':
+      return '1 ou M';
+    case '5.1':
+      return '2 ou M/D';
+    case '5.2':
+      return '3 ou D';
+    case '5.3':
+      return '4a ou D/VD';
+    case '5.4':
+      return '4a ou D/VD';
+    case '5.5':
+      return '4a/4b ou VD';
+    case '5.6':
+      return '4b ou S';
+    case '5.7':
+      return '4c ou HS';
+    case '5.8':
+      return '4c/5a ou HS/VS';
+    case '5.9':
+     return '5a ou VS';
+    case '5.10a':
+     return '5a/5b ou HVS';
+    case '5.10b':
+     return '5b ou E1';
+    case '5.10c':
+      return '5b/5c ou E1/E2';
+    case '5.10d':
+      return '5c ou E2';
+    case '5.11a':
+      return '5c ou E2/E3';
+    case '5.11b':
+      return '5c/6a ou E3';
+    case '5.11c':
+     return '6a ou E3/E4';
+    case '5.11d':
+     return '6a ou E4';
+    case '5.12a':
+     return '6a/6b ou E4/E5';
+    case '5.12b':
+     return '6b ou E5';
+    case '5.12c':
+     return '6b/6c ou E5/E6';
+    case '5.12d':
+     return '6c ou E6';
+    case '5.13a':
+     return '6c ou E6/E7';
+    case '5.13b':
+     return '6c/7a ou E7';
+    case '5.13c':
+     return '7a ou E7/E8';
+    case '5.13d':
+     return '7a ou E8';
+    case '5.14a':
+     return '7a/7b ou E9';
+    case '5.14b':
+     return '7b ou E9/E10';
+    case '5.14c':
+     return '7b ou E10';
+    case '5.14d':
+     return '7b ou E11';
+    case '5.15a':
+     return '>7b ou >E11';
+    case '5.15b':
+     return '>7b ou >E11';
+    default:
+     return 'Vous avez fait une erreur dans la cotation à convertir, elle doit ressembler à 5.12a par exemple. N’oubliez pas que c’est un point entre les deux parties de la cotations et que la lettre est minuscule.';
+    }
+    }
+
+            function convertUkToUsSportGrade(originGrade) {
+switch (originGrade) {
+    case '1':
+      return '5.0';
+    case '2':
+      return '5.1';
+    case '3':
+      return '5.2';
+    case '4a':
+      return '5.3';
+    case '4a':
+      return '5.4';
+    case '4a/4b':
+      return '5.5';
+    case '4b':
+      return '5.6';
+    case '4c':
+      return '5.7';
+    case '4c/5a':
+      return '5.8';
+    case '5a':
+      return '5.9';
+    case '5a/5b':
+      return '5.10a';
+    case '5b':
+      return '5.10b';
+    case '5b/5c':
+      return '5.10c';
+    case '5c':
+      return '5.10d';
+    case '5c':
+      return '5.11a';
+    case '5c/6a':
+      return '5.11b';
+    case '6a':
+      return '5.11c';
+    case '6a':
+      return '5.11d';
+    case '6a/6b':
+      return '5.12a';
+    case '6b':
+      return '5.12b';
+    case '6b/6c':
+      return '5.12c';
+    case '6c':
+      return '5.12d';
+    case '6c':
+      return '5.13a';
+    case '6c/7a':
+      return '5.13b';
+    case '7a':
+      return '5.13c';
+    case '7a':
+      return '5.13d';
+    case '7a/7b':
+      return '5.14a';
+    case '7b':
+      return '5.14b';
+    case '7b':
+      return '5.14c';
+    case '7b':
+      return '5.14d';
+    case '>7b':
+      return '5.15a';
+    case '>7b':
+      return '5.15b';
+    case 'M':
+      return '5.0';
+    case 'M/D':
+      return '5.1';
+    case 'D':
+      return '5.2';
+    case 'D/VD':
+      return '5.3';
+    case 'VD':
+      return '5.4';
+    case 'S':
+      return '5.5';
+    case 'HS':
+      return '5.6';
+    case 'HS/VS':
+      return '5.7';
+    case 'VS':
+      return '5.8';
+    case 'HVS':
+      return '5.9';
+    case 'E1':
+      return '5.10a';
+    case 'E1/E2':
+      return '5.10b';
+    case 'E2':
+      return '5.10c';
+    case 'E2/E3':
+      return '5.10d';
+    case 'E3':
+      return '5.11a';
+    case 'E3/E4':
+      return '5.11b';
+    case 'E4':
+      return '5.11c';
+    case 'E4/E5':
+      return '5.11d';
+    case 'E5':
+      return '5.12a';
+    case 'E5/E6':
+      return '5.12b';
+    case 'E6':
+      return '5.12c';
+    case 'E6/E7':
+      return '5.12d';
+    case 'E7':
+      return '5.13a';
+    case 'E7/E8':
+      return '5.13b';
+    case 'E8':
+      return '5.13c';
+    case 'E9':
+      return '5.13d';
+    case 'E9/E10':
+      return '5.14a';
+    case 'E10':
+      return '5.14b';
+    case 'E11':
+      return '5.14c';
+    case '>E11':
+      return '5.14d';
+    default:
+      return 'Vous avez fait une erreur dans la cotation à convertir, elle doit ressembler à E9, M ou 6c par exemple. N’oubliez pas que toutes les lettres sont majuscules.';
+}
+}
+
+function convertUkToFrBoulderGrade(originGrade) {
+  switch (originGrade) {
+    case 'B0':
+      return '1/2/3';
+    case 'B1':
+      return '4';
+    case 'B2':
+      return '4+';
+    case 'B2/3':
+      return '5';
+    case 'B3':
+      return '5+';
+    case 'B3/4':
+      return '6A';
+    case 'B4':
+      return '6A+';
+    case 'B4/5':
+      return '6B';
+    case 'B5':
+      return '6B+';
+    case 'B5/6':
+      return '6C';
+    case 'B6':
+      return '6C+';
+    case 'B7':
+      return '7A';
+    case 'B8':
+      return '7A+';
+    case 'B8/9':
+      return '7B';
+    case 'B9':
+      return '7B+';
+    case 'B10':
+      return '7C';
+    case 'B10/11':
+      return '7C+';
+    case 'B11':
+      return '8A';
+    case 'B12':
+      return '8A+';
+    case 'B13':
+      return '8B';
+    case 'B14':
+      return '8B+';
+    case 'B15':
+      return '8C';
+    case 'B16':
+      return '8C+';
+    case 'B17':
+      return '9A';
+    default:
+      return 'Vous avez fait une erreur dans la cotation à convertir, elle doit ressembler à B12 par exemple. N’oubliez pas que le B est majuscule.';
+  }
+}
+
+  function convertFrToUkBoulderGrade(originGrade) {
+switch (originGrade) {
+    case '1':
+      return 'B0';
+    case '2':
+      return 'B0';
+    case '3':
+      return 'B0';
+    case '4':
+      return 'B1';
+    case '4+':
+      return 'B2';
+    case '5':
+      return 'B2/3';
+    case '5+':
+      return 'B3';
+    case '6A':
+      return 'B3/4';
+    case '6A+':
+      return 'B4';
+    case '6B':
+      return 'B4/5';
+    case '6B+':
+      return 'B5';
+    case '6C':
+      return 'B5/6';
+    case '6C+':
+      return 'B6';
+    case '7A':
+      return 'B7';
+    case '7A+':
+      return 'B8';
+    case '7B':
+      return 'B8/9';
+    case '7B+':
+      return 'B9';
+    case '7C':
+      return 'B10';
+    case '7C+':
+      return 'B10/11';
+    case '8A':
+      return 'B11';
+    case '8A+':
+      return 'B12';
+    case '8B':
+      return 'B13';
+    case '8B+':
+      return 'B14';
+    case '8C':
+      return 'B15';
+    case '8C+':
+      return 'B16';
+    case '9A':
+      return 'B17';
+    default:
+      return 'Vous avez fait une erreur dans la cotation à convertir, elle doit ressembler à 6B par exemple. N’oubliez pas que la lettre est majuscule.';
+}
+}
+
+      function convertUkToFrSportGrade(originGrade) {
+switch (originGrade) {
+    case '1':
+      return '1';
+    case '2':
+      return '2';
+    case '3':
+      return '3';
+    case '4a':
+      return '4';
+    case '4a':
+      return '4+';
+    case '4a/4b':
+      return '5a';
+    case '4b':
+      return '5a/b';
+    case '4c':
+      return '5b';
+    case '4c/5a':
+      return '5b/c';
+    case '5a':
+      return '5c';
+    case '5a/5b':
+      return '6a';
+    case '5b':
+      return '6a+';
+    case '5b/5c':
+      return '6b';
+    case '5c':
+      return '6b+';
+    case '5c':
+      return '6c';
+    case '5c/6a':
+      return '6c+';
+    case '6a':
+      return '7a';
+    case '6a':
+      return '7a+';
+    case '6a/6b':
+      return '7b';
+    case '6b':
+      return '7b+';
+    case '6b/6c':
+      return '7c';
+    case '6c':
+      return '7c+';
+    case '6c':
+      return '8a';
+    case '6c/7a':
+      return '8a/a+';
+    case '7a':
+      return '8a+';
+    case '7a':
+      return '8b';
+    case '7a/7b':
+      return '8b+';
+    case '7b':
+      return '8c';
+    case '7b':
+      return '8c+';
+    case '7b':
+      return '9a';
+    case '>7b':
+      return '9a/a+';
+    case '>7b':
+      return '9a+';
+    case 'M':
+      return '1';
+    case 'M/D':
+      return '2';
+    case 'D':
+      return '3';
+    case 'D/VD':
+      return '4';
+    case 'VD':
+      return '4+';
+    case 'S':
+      return '5a';
+    case 'HS':
+      return '5a/5b';
+    case 'HS/VS':
+      return '5b';
+    case 'VS':
+      return '5b/5c';
+    case 'HVS':
+      return '5c';
+    case 'E1':
+      return '6a';
+    case 'E1/E2':
+      return '6a+';
+    case 'E2':
+      return '6b';
+    case 'E2/E3':
+      return '6b+';
+    case 'E3':
+      return '6c';
+    case 'E3/E4':
+      return '6c+';
+    case 'E4':
+      return '7a';
+    case 'E4/E5':
+      return '7a+';
+    case 'E5':
+      return '7b';
+    case 'E5/E6':
+      return '7b+';
+    case 'E6':
+      return '7c';
+    case 'E6/E7':
+      return '7c+';
+    case 'E7':
+      return '8a';
+    case 'E7/E8':
+      return '8a/8a+';
+    case 'E8':
+      return '8a+';
+    case 'E9':
+      return '8b';
+    case 'E9/E10':
+      return '8b+';
+    case 'E10':
+      return '8c';
+    case 'E11':
+      return '8c+';
+    case '>E11':
+      return '9a';
+    case '>E11/E12':
+      return '9a/9a+';
+    case 'E12':
+      return '9a+';
+    case 'E12/E13':
+      return '9a+/9b';
+    case 'E13':
+      return '9b';
+    case 'E13/E14':
+      return '9b+';
+    case 'E14':
+      return '9c';
+    default:
+      return 'Vous avez fait une erreur dans la cotation à convertir, elle doit ressembler à E9, M ou 6c par exemple. N’oubliez pas que toutes les lettres sont majuscules.';
+}
+    }
+
+      function convertFrToUkSportGrade(originGrade) {
+  switch (originGrade) {
+    case '1':
+      return '1 ou M';
+    case '2':
+      return '2 ou M/D';
+    case '3':
+      return '3 ou D';
+    case '4':
+      return '4a ou D/VD';
+    case '4+':
+      return '4a/4b ou VD';
+    case '5a':
+      return '4b ou S';
+    case '5a/5b':
+      return '4c ou HS';
+    case '5b':
+      return '4c/5a ou HS/VS';
+    case '5b/5c':
+      return '5a ou VS';
+    case '5c':
+      return '5a/5b ou HVS';
+    case '6a':
+      return '5b ou E1';
+    case '6a+':
+      return '5b/5c ou E1/E2';
+    case '6b':
+      return '5c ou E2';
+    case '6b+':
+      return '5c ou E2/E3';
+    case '6c':
+      return '5c/6a ou E3';
+    case '6c+':
+      return '6a ou E3/E4';
+    case '7a':
+      return '6a ou E4';
+    case '7a+':
+      return '6a/6b ou E4/E5';
+    case '7b':
+      return '6b ou E5';
+    case '7b+':
+      return '6b/6c ou E5/E6';
+    case '7c':
+      return '6c ou E6';
+    case '7c+':
+      return '6c ou E6/E7';
+    case '8a':
+      return '6c/7a ou E7';
+    case '8a/8a+':
+      return '7a ou E7/E8';
+    case '8a+':
+      return '7a ou E8';
+    case '8b':
+      return '7a/7b ou E9';
+    case '8b+':
+      return '7b ou E9/E10';
+    case '8c':
+      return '7b ou E10';
+    case '8c+':
+      return '7b ou E11';
+    case '9a':
+      return '>7b ou >E11';
+    case '9a/9a+':
+      return '>7b ou >E11';
+    case '9a+':
+      return '>7b ou >E11';
+    case '9a+/9b':
+      return '>7b ou >E11';
+    case '9b':
+      return '>7b ou >E11';
+    case '9b+':
+      return '>7b ou >E11';
+    case '9c':
+      return '>7b ou >E11';
+    default:
+      return 'Vous avez fait une erreur dans la cotation à convertir, elle doit ressembler à 9b par exemple. N’oubliez pas que la lettre est minuscule.'
+    }
+      }
+  
+    
+  document.getElementById("convertedGrade").innerHTML = convertedGrade;
+		}   
+  </script>
+</html>
