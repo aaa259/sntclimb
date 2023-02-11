@@ -3,7 +3,7 @@
 <head>
 	<title>Convertisseur de cotation d'escalade</title>
   <link rel="stylesheet" href="style.css"> 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
 </head>
 
 
@@ -11,13 +11,13 @@
  <body>
   <form>
     
-  <br></br>
+  
     
 	<p>-Entrez la cotation à convertir</p>
 	<div class=groupe>
 		<input type="text" id="originGrade" placeholder="5c par exemple">
 	 </div>
-	<br><br>
+	<br>
 	<p>-Sélectionnez le pays d'origine de cette cotation</p>
 	
 		<select id="originCountry">
@@ -27,7 +27,7 @@
 		</select>
     <i class="fa-solid fa-earth-americas"></i>
 
-	<br><br>
+	<br>
 	<p>-Selectionnez le pays de la cotation dans laquelle convertir</p>
 	
 		<select id="targetCountry">
@@ -38,21 +38,21 @@
    <i class="fa-solid fa-earth-americas"></i>
  
 	
-	<br><br>
+	<br>
 	<p>-Quelle discipline ?</p>
 	
 		<input type="radio" id="sport" name="conversionType" value="sport" checked>
 		<label for="sport">Voie 🧗</label>
-		<br><br>
+		<br>
 		<input type="radio" id="boulder" name="conversionType" value="boulder">
 		<label for="boulder">Bloc ⛰️</label>
 	
-	<br><br>
+	<br>
   <div class=container>
 	<button type="button" id="monBouton" class=button onclick="convertGrade()" >Convertir<i class="fa-solid fa-arrow-right-arrow-left"></i></button>
   </div>
 
-	<br><br>
+	<br>
 <script>
  let result= "Votre cotation est "
 document.getElementById("monBouton").addEventListener("click", function() {
@@ -61,9 +61,9 @@ document.getElementById("monBouton").addEventListener("click", function() {
 });
 </script>
     <p style="display: inline-block" id="monParagraphe"></p>
-    <strong><span style="display: inline-block" id="convertedGrade"></span></strong>     </p>
+    <strong><span style="display: inline-block" id="convertedGrade"></span></strong>     
   
-    <br></br>
+    <br>
     </form>
    </body>
       
@@ -74,9 +74,9 @@ document.getElementById("monBouton").addEventListener("click", function() {
 
 
   <h1><strong>Sommaire</strong></h1>
-<br><br>
+<br>
   <a href="#I"><h2>I. Les différentes cotations en escalade</h1></a>
-<br><br>
+<br>
   <a href="#1"><p>1. États-Unis : Sierra (voie)</p></a>
   <a href="#2"><p>2. États-Unis : Vermin (bloc)</p></a>
   <a href="#3"><p>3. France (voie)</p></a>
@@ -85,74 +85,74 @@ document.getElementById("monBouton").addEventListener("click", function() {
   <a href="#6"><p>6. Angleterre : Technical (voie)</p></a>
   <a href="#7"><p>7. Angleterre : Peak District (bloc)</p></a>
   <a href="#8"><p>8. Autres cotations</p></a>
-  <br></br>
+  <br>
   <a href="#II"><h2>II. Tableau de comparaison</h1></a>
-<br></br>
+<br>
   <a href="#11"><p>1. Bloc</p></a>
   <a href="#22"><p>2. Voie</p></a>
-  <br></br>
-  <a href="#III"><h2>III. Source</h1></a>
-  <br></br>
+  <br>
+  <a href="#III"><h2>III. Source</h2></a>
+  <br>
 
   <h2 id="I">Les différentes cotations en escalade</h2>
-  <br></br>
+  <br>
   <h3 id="1">États-Unis : Sierra (voie)</h3>
   <p>Cette cotation est utilisée en amérique du nord. Elle va de 1 à 5.15.
   De 1 à 4, c'est de la randonnée. A partir de 5, ça devient de l'escalade. De 5.0 à 5.3 tout le monde peut réussir, de 5.4 à 5.7, les novices y arrivent encore, de 5.8 à 5.11 il faut de bonnes bases pour réussir à grimper, de 5.12 à 5.14 il faut être un expert et au-delà de 5.15, c'est le niveau professionnel.</p>
-  <br></br>
+  <br>
   <h3 id="2">États-Unis : Vermin (bloc)</h3>
   <p>Cette cotation est très répandue aux Etats-Unis, Canada et Australie. Elle est apparue en 1980 à Hueco Tanks et est utilisée pour le bloc. Elle va de V0 à V17. Cependant, elle a tendance a discriminer les blocs simple. C'est-à-dire que par exemple un bloc 6A déjà presque inaccessible pour un débutant sera côté V3.</p
  
-<br></br>
+<br>
   <h3 id="3">France (voie)</h3>
    <p>Elle est uniquement utilisée en France et est très précise. En effet, elle va du 1 au 9c et elle combine des chiffres, des lettres (a,b,c) et des + ce qui lui permet une grande précision. </p>
-  <br></br>
+  <br>
   <h3 id="4">France : Fontainebleau (bloc)</h3>
   <p>C'est l'échelle de cotation de bloc dans toute l'Europe. Elle tient son nom de la ville de Fontainebleau où est née la pratique du bloc. Elle ressemeble à la cotation française pour la voie car comme cette dernière elle utilise des chiffres, des lettre, des + mais pas de -. Elle démarre cependant un peu plus haut, en effet, un 5B de Fontainebleau correspond à un 6b de cotation française. </p>
 <div class=image>  
-<img src="https://img.redbull.com/images/c_crop,w_1999,h_1000,x_0,y_274,f_auto,q_auto/c_scale,w_1200/redbullcom/2016/06/26/1331802686409_2/fontainebleau-escalade-fontbleau-2016">
+<img src="https://img.redbull.com/images/c_crop,w_1999,h_1000,x_0,y_274,f_auto,q_auto/c_scale,w_1200/redbullcom/2016/06/26/1331802686409_2/fontainebleau-escalade-fontbleau-2016" alt="Voici le tableau de conversion pour la difficulté des voies">
   <p>Par Paul Gallo</p>
 	</div>
-  <br></br>
+  <br>
     <h3 id="5">Angleterre : Adjectival (voie)</h3>
   <p>Cette notation est utilisé au Royaume-Unis et prend en compte les facteurs de techniques, d'assurage, de qualité de roche, d'exposition et d'endurance. Elle est faite pour les ascencions à vue sans que le grimpeur n'est vu quelqu'un la faire. Elle utilise la lettre E depuis 1970 et a été créée par O.G Jones au début du 20ème siècle. </p>
-  <br></br>
+  <br>
   <h3 id="6">Angleterre : Technical (voie)</h3>
   <p>Elle est aussi utlisée au Royaume-Uni mais ne prend en compte que la technique nécessaire pour gravir la voie. Elle néglige ainsi l'endurance, les conditions ... Elle s'inspire à la base de l'échelle de cotation de Fontainebleau.</p>
-  <br></br>
+  <br>
   <h3 id="7">Angleterre : Peak District (bloc)</h3>
   <p>Aux alentours de 2002, cette cotation est apparue dans des magazines de grimpe et a été utilisé en Angleterre à Peak District d'où son nom.</p>
-  <br></br>
+  <br>
     <h3 id="8">Autres cotations</h3>
-  <p>Il existe toutefois de nombreuses autres cotations en voie comme :
+  <p>Il existe toutefois de nombreuses autres cotations en voie comme :</p>
   <ul>
     <li>La UIAA (celle de l'union internationale)</li>
     <li>La De (d'Allemagne)</li>
     <li>La Scandinave (de Finlande)</li>
     <li>La Scandinave (de Norvège et Suède)</li>
     <li>Ainsi que d'autres moins répandues</li>
-  </ul></p>
-  <br></br>
+  </ul>
+  <br>
   <h2 id="II">Tableau de comparaison</h2>
-  <br></br>
+  <br>
   <h3 id="11">Bloc :</h3>
 <div class=image>    
 <img src="https://3.bp.blogspot.com/-1ooHESPQcNk/VQmeR4hQ-JI/AAAAAAAANcM/VBdlmAkcHM4/s1600/%C3%A9quivalencecot.JPG" alt="Voici le tableau de conversion pour la difficulté des blocs.">
   <p>Par Louise Gally</p>
 	</div>
-  <br></br>
+  <br>
  
   <h3 id="22">Voie (avec l'échelle de l'UIAA) :</h3>
 <div class=image>   
 <img src="https://blog.kazaden.com/blog/wp-content/uploads/2016/12/tableau-cotations-international.jpg" alt="Voici le tableau de conversion pour la difficulté des voies." width="600" height="900">
   <p>Par Kazaden</p>
 	</div>
-  <br></br>
+  <br>
   <h3 id="III">Voici mes sources :</h3>
         <p><em>Cotation en escalade " Convertir les degrés de difficulté en ligne</em> .(2020). Extrait de <a href="https://www.alpiniste.fr/cotation-escalade-calculateur/">https://www.alpiniste.fr/cotation-escalade-calculateur/</a></p>
 
    <p><em>Les Différentes Cotations en Escalade</em> .(23 avril 2021). Extrait de <a href="https://blog.kazaden.com/cotations-en-escalade-alpinisme/"> https://blog.kazaden.com/cotations-en-escalade-alpinisme/</a></p>
-  <p>Louise Gally. <em>Les Cotations Louiseg - lewebpedagogique.com</em>. Extrait de <a href="https://lewebpedagogique.com/sectionescalade/files/2015/11/Les-cotations-LouiseG-V2.pdf"</a>https://lewebpedagogique.com/sectionescalade/files/2015/11/Les-cotations-LouiseG-V2.pdf</p>
+  <p>Louise Gally. <em>Les Cotations Louiseg - lewebpedagogique.com</em>. Extrait de<a href="https://lewebpedagogique.com/sectionescalade/files/2015/11/Les-cotations-LouiseG-V2.pdf"> https://lewebpedagogique.com/sectionescalade/files/2015/11/Les-cotations-LouiseG-V2.pdf</a></p>
  </body>
 	<script>
 		function convertGrade() {
