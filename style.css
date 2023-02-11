@@ -33,10 +33,9 @@ h1{font-family: 'Inter', sans-serif;}
 form{background-color: beige;
     border-radius: 20px;
        border: 2px solid #ccc;
-        display: flex;
-  justify-content: center;
-  align-items: center;
-
+margin-left: 120px;
+   margin-right: 120px;
+   
     }
 
 body{padding: 12px;
