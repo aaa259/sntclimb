@@ -32,9 +32,10 @@ h1{font-family: 'Inter', sans-serif;}
 
 form{background-color: beige;
     border-radius: 20px;
-     margin-left: 400px;
-     margin-right: 400px;
        border: 2px solid #ccc;
+        display: flex;
+  justify-content: center;
+  align-items: center;
 
     }
 
